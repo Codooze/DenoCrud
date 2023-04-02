@@ -1,0 +1,28 @@
+@baseUrl = http://localhost:3000/
+
+### get tasks
+GET {{baseUrl}}tasks
+
+### get task by id
+GET {{baseUrl}}tasks/1
+
+### create task
+POST {{baseUrl}}tasks
+Content-Type: application/json
+
+{
+  "title": "Task 1",
+  "description": "Task 1 description"
+}
+
+### update task
+PUT {{baseUrl}}tasks/1
+Content-Type: application/json
+
+{
+  "title": "Task 1",
+  "description": "Task 1 description"
+}
+
+### delete task
+DELETE {{baseUrl}}tasks/1
